@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    {{>navbar}}
+    <div class="container">
+        <form action="/register" method="POST">
+            <div class="row register-form">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First Name" value="" name="firstname">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your email" value="" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone no" minlength="10" maxlength="10" value="" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="password" value="" name="password">
+                    </div>
+
+                     <div class="form-group">
+                        <input type="password" class="form-control" placeholder="confirm password" value="" name="confirmpassword">
+                    </div>
+                    <input type="submit" class="btnRegister" value="Register">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: red;
+            height: 455px;
+        }
+        .box{
+            border: 2px solid black;
+             transform: translate(134px,65px) ;
+            /*rotate(34deg);*/
+            transform-origin: 0;
+            display: inline-block;
+            /* transform: scale(4,7); */
+            /* transform: skew(114deg,5deg); */
+            transform: rotateX(300deg);
+
+        }
+        img{
+            width: 450px;
+            transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+        }
+        img:hover{
+            width: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myImg" src="https://media.istockphoto.com/photos/hands-outstretched-in-a-begging-pose-ready-to-receive-holy-communion-picture-id1317417378?b=1&k=20&m=1317417378&s=170667a&w=0&h=X9DLLTpC1UXGsXu_RdickI2HfLfEp9kWO6ek9nYqJIU=" alt="">
+        </div>
+        <button id="btn">Toggle</button>
+        <!-- <div class="box"></div>
+        <div class="box"></div> -->
+    </div>
+</body>
+<script>
+    alert("this script work")
+    let a=prompt("Enter a here: ",("678"))
+    //document.write(a)
+    a=Number.parseInt(a)
+    alert("You entered type: " +(typeof a))
+    let write=confirm("Do you want to write")
+    if(write){
+        document.write(a)
+    }
+    else{
+        document.write("niklo")
+    }
+    btn.addEventListener("click", ()=>{
+        //myImg.style.width="46px";
+        if(myImg.style.width==='46px'){
+            myImg.style.width="405px";
+        }
+        else if(myImg.style.width==='405px'){
+            myImg.style.width="5006px";
+        }
+        else{
+            myImg.style.width="46px";
+        }
+        
+    })
+</script>
+</html>

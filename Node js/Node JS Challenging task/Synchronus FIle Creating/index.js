@@ -1,0 +1,10 @@
+const fs=require("fs")
+
+// fs.mkdirSync("Amjad")
+// fs.writeFileSync("Amjad/bio.txt","My name is MUhammad Amjad")
+// fs.appendFileSync("Amjad/bio.txt",". I am student of Bahria University")
+// const data=fs.readFileSync("Amjad/bio.txt","utf8")
+// console.log(data)
+// fs.renameSync("Amjad/bio.txt","Amjad/my_bio.txt")
+// fs.unlinkSync("Amjad/my_bio.txt")
+// fs.rmdirSync("Amjad")
